@@ -15,7 +15,13 @@ const Template = args => {
   return (
     <div className="container-full main-color-bg c-rounded spacing-v">
       <div className="row mg-1-v info-color-bg">
-        <div>This is a normal Row</div>
+        <div className="col">This is a normal Row</div>
+      </div>
+      <div className="row">
+        <div className="col-lg-4 col-mid-6 col-xs-12">Col 1</div>
+        <div className="col-lg-4 col-mid-6 col-xs-12">Col 2</div>
+        <div className="col-lg-4 col-mid-6 col-xs-12">Col 3</div>
+        <div className="col-lg-4 col-mid-6 col-xs-12">Col 3</div>
       </div>
       <div className="row-sm mg-1-v secondary-color-bg">
         <div>This is a small Row</div>

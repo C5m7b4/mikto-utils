@@ -35,9 +35,11 @@ $linkedin-color: #4064ad;
 $youtube-color: #f80000;
 $snapchat-color: #ffee00;
 
-$media-lg: 1200px;
-$media-mid: 900px;
-$media-sm: 600px;
+$media-xs: 0px;
+$media-sm: 576px;
+$media-mid: 768px;
+$media-lg: 992px;
+$media-xl: 1200px;
 
 $media-lg-max: (($media-lg) - 1);
 $media-mid-max: (($media-mid) - 1);
