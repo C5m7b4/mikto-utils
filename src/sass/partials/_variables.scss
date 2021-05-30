@@ -1,0 +1,49 @@
+$grid-column-count: 12;
+
+// variable colors
+$primary-color: #cbe5fe;
+$secondary-color: #e2e3e5;
+$success-color: #d4edda;
+$danger-color: #f7d7da;
+$warning-color: #fff3cd;
+$info-color: #d0ecf0;
+$light-color: #fefefe;
+$dark-color: #d7d8da;
+
+// background-colors
+$btn-bg-primary-color: $primary-color;
+$btn-bg-secondary-color: $secondary-color;
+$btn-bg-success-color: $success-color;
+$btn-bg-danger-color: $danger-color;
+$btn-bg-warning-color: $warning-color;
+$btn-bg-info-color: $info-color;
+$btn-bg-light-color: $light-color;
+$btn-bg-dark-color: $dark-color;
+
+// neon colors
+$neon-red: #f40303;
+$neon-green: #03f423;
+$neon-blue: #032ff4;
+$neon-yellow: #f0f403;
+
+// social media colors
+$facebook-color: #395599;
+$instagram-color: #ce2f82;
+$twitter-color: #1c9deb;
+$pinterest-color: #d73532;
+$linkedin-color: #4064ad;
+$youtube-color: #f80000;
+$snapchat-color: #ffee00;
+
+$media-lg: 1200px;
+$media-mid: 900px;
+$media-sm: 600px;
+
+$media-lg-max: (($media-lg) - 1);
+$media-mid-max: (($media-mid) - 1);
+$media-sm-max: (($media-sm) - 1);
+
+// grid: gutters
+$grid-gutter: 7.5px;
+$grid-gutter-sm: ($grid-gutter / 2);
+$grid-gutter-lg: ($grid-gutter * 2);
