@@ -1,0 +1,93 @@
+.font-family-1 {
+  font-family: $font-family-1;
+}
+
+$font-sizes-map: (
+  'font-size': $font-size,
+  'font-size-sm': $font-size-sm,
+  'font-size-xs': $font-size-xs,
+  'font-size-lg': $font-size-lg,
+);
+
+@each $name, $value in $font-sizes-map {
+  .#{$name} {
+    font-size: $value;
+  }
+}
+
+$font-weight-map: (
+  'font-regular': $font-regular,
+  'font-semi-bold': $font-semi-bold,
+  'font-bold': $font-bold,
+);
+
+@each $name, $value in $font-weight-map {
+  .#{$name} {
+    font-weight: $value;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+$heading-sizes-map: (
+  'h1': $h1,
+  'h2': $h2,
+  'h3': $h3,
+  'h4': $h4,
+  'h5': $h5,
+  'h6': $h6,
+);
+
+@each $name, $value in $heading-sizes-map {
+  .#{$name} {
+    font-size: $value;
+    font-weight: $font-semi-bold;
+    $line-height: 1.2;
+    margin: 0 0 $spacing-2 0;
+  }
+}
+
+.p {
+  margin-bottom: $spacing;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  margin-bottom: $spacing;
+  padding-left: $spacing;
+
+  li {
+    margin-bottom: $spacing;
+  }
+
+  ul {
+    padding-left: $spacing-2;
+  }
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}

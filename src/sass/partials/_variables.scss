@@ -1,5 +1,14 @@
 $grid-column-count: 12;
 
+$brand-1: #007aff;
+$brand-2: #6c757e;
+$brand-success: #27a844;
+$brand-info: #17a2b7;
+$brand-warning: #fec107;
+$brand-danger: #dc3546;
+$brand-light: #fff;
+$brand-black: #000;
+
 // variable colors
 $primary-color: #cbe5fe;
 $secondary-color: #e2e3e5;
@@ -9,6 +18,7 @@ $warning-color: #fff3cd;
 $info-color: #d0ecf0;
 $light-color: #fefefe;
 $dark-color: #d7d8da;
+$black: #000;
 
 // background-colors
 $btn-bg-primary-color: $primary-color;
@@ -49,3 +59,28 @@ $media-sm-max: (($media-sm) - 1);
 $grid-gutter: 7.5px;
 $grid-gutter-sm: ($grid-gutter / 2);
 $grid-gutter-lg: ($grid-gutter * 2);
+
+$font-family-1: 'Nunito Sans', sans-serif;
+
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+$line-height: 1.5;
+
+$font-size: 14px;
+$font-size-sm: px-to-percent(12);
+$font-size-xs: px-to-percent(10);
+$font-size-lg: px-to-percent(16);
+
+$h1: px-to-percent(24);
+$h2: px-to-percent(22);
+$h3: px-to-percent(20);
+$h4: px-to-percent(18);
+$h5: px-to-percent(16);
+$h6: px-to-percent(14);
+
+$transition-linear: all 0.2s linear;
+$transition-ease-in: all 0.2s ease-in;
+
+$box-shadow: 0px 4px 10px rgba($black, 0.1);

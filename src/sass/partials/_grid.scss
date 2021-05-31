@@ -4,6 +4,7 @@
   @include clearFix;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .row {
@@ -103,22 +104,12 @@
   flex-wrap: wrap;
 }
 
-.flex-justify-center {
-  justify-content: center;
-}
-
-.flex-align-center {
-  align-items: center;
-}
-
-.flex-1 {
-  flex: 1;
-}
-
-.margin-left-auto {
+@mixin center-element {
   margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-.margin-right-auto {
-  margin-right: auto;
+.center-element {
+  @include center-element;
 }
