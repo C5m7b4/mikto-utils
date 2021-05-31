@@ -1,0 +1,94 @@
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.vertical-align-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vertical-align-center {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vertical-align-bottom {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vertical-center {
+  @include vertical-center;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.absolute-center {
+  @include absolute-center;
+}
+
+// use this as the parent for absolute positioned styles
+.position-relative {
+  position: relative;
+}
