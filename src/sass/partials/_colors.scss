@@ -7,6 +7,14 @@ $colors-map: (
   'info-color': $info-color,
   'light-color': $light-color,
   'dark-color': $dark-color,
+  'brand-1': $brand-1,
+  'brand-2': $brand-2,
+  'brand-success': $brand-success,
+  'brand-warning': $brand-warning,
+  'brand-danger': $brand-danger,
+  'brand-info': $brand-info,
+  'brand-light': $brand-light,
+  'brand-black': $brand-black,
 );
 
 @each $name, $hex-value in $colors-map {

@@ -1,3 +1,7 @@
+$border-radius: 10px;
+$border-radius-lg: ($border-radius * 2);
+$border-radius-xl: ($border-radius * 3);
+
 .c-rounded {
   border-radius: 10px;
 }

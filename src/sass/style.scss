@@ -1,7 +1,4 @@
-@import 'functions';
-@import 'variables';
-@import 'mixins';
-@import 'utilities';
+
 
 // Layout and components
 @import 'root';
@@ -15,3 +12,12 @@
 
 // Utilities
 @import 'utilities/api';
+=======
+@import './partials/grid';
+@import './partials/alignment';
+
+@import './partials/typography';
+@import './partials/buttons';
+
+@import './partials/components';
+

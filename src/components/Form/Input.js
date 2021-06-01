@@ -1,4 +1,6 @@
-import React, { useRef, useEffect } from 'react';
+
+import React, { useRef } from 'react';
+
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { mapToCssModules, warnOnce, tagPropType } from '../../utils';
@@ -10,7 +12,9 @@ const propTypes = {
   bsSize: PropTypes.string,
   valid: PropTypes.bool,
   tag: tagPropType,
-  innerRef: PropTypes.oneOfType([PropTypes.object, PropTypes.func, PropTypes.string]),
+
+  innerRef: PropTypes.oneOfType([PropTypes.object, propTypes.func, PropTypes.string]),
+
   plainText: PropTypes.bool,
   addon: PropTypes.bool,
   className: PropTypes.string,
@@ -30,6 +34,7 @@ export const Input = ({
   invalid,
   tag,
   addon,
+
   plaintext,
   innerRef,
   ...attributes
@@ -100,6 +105,7 @@ export const Input = ({
   }
 
   return <Tag {...attributes} ref={innerRef} className={classes} aria-invalid={invalid} />;
+
 };
 
 Input.propTypes = propTypes;
