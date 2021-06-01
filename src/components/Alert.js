@@ -47,7 +47,7 @@ export const Alert = ({
   ...attributes
 }) => {
   const classes = mapToCssModules(
-    classNames(className, 'alert', `alert-${color}-bg`, { 'alert-dismissible': toggle }),
+    classNames(className, 'alert', `alert-${color}`, { 'alert-dismissible': toggle }),
     cssModule,
   );
 

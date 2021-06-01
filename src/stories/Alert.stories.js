@@ -12,76 +12,31 @@ const Template = args => {
   const [visible, setVisible] = useState(true);
 
   const toggle = () => {
-    console.log('visible', !visible);
     setVisible(!visible);
   };
+
   return (
-    <Alert {...args} isOpen={visible} toggle={toggle}>
-      {args.children ? (
-        <React.Fragment>{args.children}</React.Fragment>
-      ) : (
-        <React.Fragment>{`This is an ${args.color} Alert`}</React.Fragment>
-      )}
-    </Alert>
+    <div>
+      <Alert color="primary">Here is a primary alert.</Alert>
+      <Alert color="secondary">Here is a secondary alert.</Alert>
+      <Alert color="info">Here is a info alert.</Alert>
+      <Alert color="warning">Here is a warning alert.</Alert>
+      <Alert color="danger">Here is a danger alert.</Alert>
+      <Alert color="success">Here is a success alert.</Alert>
+      <h3>Alerts with Links</h3>
+      <Alert color="primary">
+        Here is a blue alert with{' '}
+        <a href="#" className="alert-link">
+          an example link
+        </a>
+        . Give it a go
+      </Alert>
+      <Alert color="success">
+        <h4 className="alert-heading">Read Carefully</h4>
+        <p>This information will self-destruct when you are done reading it. </p>
+      </Alert>
+    </div>
   );
 };
 
-export const Primary = Template.bind({});
-Primary.args = {
-  color: 'main-color',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  color: 'secondary-color',
-};
-
-export const Success = Template.bind({});
-Success.args = {
-  color: 'success-color',
-};
-
-export const Danger = Template.bind({});
-Danger.args = {
-  color: 'danger-color',
-};
-
-export const Warning = Template.bind({});
-Warning.args = {
-  color: 'warning-color',
-};
-
-export const Info = Template.bind({});
-Info.args = {
-  color: 'info-color',
-};
-
-export const Dark = Template.bind({});
-Dark.args = {
-  color: 'dark-color',
-};
-
-const buildChildren = () => {
-  return (
-    <React.Fragment>
-      <h4 className="alert-heading">Well done!</h4>
-      <p>
-        These are very important instructions. They will self destruct after you have read them.
-        Don't miss any part of this shit or you will die, bitch.
-      </p>
-      <hr />
-      <p className="mb-0">Dont' forget to eat your wheaties</p>
-    </React.Fragment>
-  );
-};
-
-export const Content = Template.bind({});
-Content.args = {
-  color: 'main-color',
-  children: buildChildren(),
-};
-
-export const Dismiss = Template.bind({});
-Dismiss.args = {
-  color: 'info-color',
-};
+export const Alerts = Template.bind({});

@@ -1,17 +1,17 @@
-import React from "react";
-import { Collapsible } from "../components/Collapsible/Collapsible";
+import React from 'react';
+import { Collapsible } from '../components/Collapsible/Collapsible';
 
-import "../styles.css";
+//import "../styles.css";
 
 export default {
-  title: "Components/Collapsible",
+  title: 'Components/Collapsible',
   component: Collapsible,
   argTypes: {
-    label: { string: "Expandable" },
+    label: { string: 'Expandable' },
   },
 };
 
-const Template = (args) => (
+const Template = args => (
   <Collapsible label="Label" {...args}>
     <h1>Hello</h1>
   </Collapsible>
@@ -19,5 +19,5 @@ const Template = (args) => (
 
 export const Basic = Template.bind({});
 Basic.args = {
-  label: "Expand Me",
+  label: 'Expand Me',
 };

@@ -113,6 +113,16 @@ export function pick(obj, keys) {
   return result;
 }
 
+let warned = {};
+export function warnOnce(message) {
+  if (!warned[message]) {
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    warned[message] = true;
+  }
+}
+
 export const TransitionTimeouts = {
   Fade: 150,
   Collapse: 350,

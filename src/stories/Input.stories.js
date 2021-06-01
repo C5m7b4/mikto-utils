@@ -10,4 +10,5 @@ export default {
 
 const Template = args => <Input />;
 
+
 export const Default = Template.bind({});
