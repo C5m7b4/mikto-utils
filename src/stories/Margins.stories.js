@@ -17,7 +17,8 @@ const Template = args => {
       {Object.keys(args).map((arg, i) => (
         <div
           key={`mg-demo=${i}`}
-          className={`styleguide-demo-each secondary-color-bg ${args[arg]} spacing`}
+          className={` ${args[arg]} primary`}
+          style={{ padding: '10px', color: '#fff' }}
           {...args}
         >
           This is some sample Text using the{' '}
@@ -30,32 +31,32 @@ const Template = args => {
 
 export const Margins = Template.bind({});
 Margins.args = {
-  mg1: 'mg-1',
-  mg2: 'mg-1-h',
-  mg3: 'mg-1-v',
-  mg4: 'mg-1-l',
-  mg5: 'mg-1-r',
-  mg6: 'mg-1-t',
-  mg7: 'mg-1-b',
-  mg8: 'mg-2',
-  mg9: 'mg-2-h',
-  mg10: 'mg-2-v',
-  mg11: 'mg-2-l',
-  mg12: 'mg-2-r',
-  mg13: 'mg-2-t',
-  mg14: 'mg-2-b',
-  mg15: 'mg-3',
-  mg16: 'mg-3-h',
-  mg17: 'mg-3-v',
-  mg18: 'mg-3-l',
-  mg19: 'mg-3-r',
-  mg20: 'mg-3-t',
-  mg21: 'mg-3-b',
-  mg22: 'mg-half',
-  mg23: 'mg-half-h',
-  mg24: 'mg-half-v',
-  mg25: 'mg-half-l',
-  mg26: 'mg-half-r',
-  mg27: 'mg-half-t',
-  mg28: 'mg-half-b',
+  'm-0': 'm-0',
+  'm-1': 'm-1',
+  'm-2': 'm-2',
+  'm-3': 'm-3',
+  'm-4': 'm-4',
+  'm-5': 'm-5',
+  'm-auto': 'm-auto',
+  'mx-0': 'mx-0',
+  'mx-1': 'mx-1',
+  'mx-2': 'mx-2',
+  'mx-3': 'mx-3',
+  'mx-4': 'mx-4',
+  'mx-5': 'mx-5',
+  'mx-auto': 'mx-auto',
+  'my-0': 'my-0',
+  'my-1': 'my-1',
+  'my-2': 'my-2',
+  'my-3': 'my-3',
+  'my-4': 'my-4',
+  'my-5': 'my-5',
+  'my-auto': 'my-auto',
+  'mt-0': 'mt-0',
+  'mt-1': 'mt-1',
+  'mt-2': 'mt-2',
+  'mt-3': 'mt-3',
+  'mt-4': 'mt-4',
+  'mt-5': 'mt-5',
+  'mt-auto': 'mt-auto',
 };
