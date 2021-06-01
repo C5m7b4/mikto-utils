@@ -1,0 +1,50 @@
+$spacing: 10px;
+$spacing-2: ($spacing * 2);
+$spacing-3: ($spacing * 3);
+$spacing-half: ($spacing / 2);
+
+$spacing-map: (
+  'spacing': $spacing,
+  'spacing-2': $spacing-2,
+  'spacing-3': $spacing-3,
+  'spacing-half': $spacing-half,
+);
+
+@each $name, $value in $spacing-map {
+  // spacing on all sides
+  .#{$name} {
+    padding: $value;
+  }
+
+  // spacing horizontal
+  .#{$name}-h {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  // vertical spacing
+  .#{$name}-v {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  // left spacing
+  .#{$name}-l {
+    padding-left: $value;
+  }
+
+  // right spacing
+  .#{$name}-r {
+    padding-right: $value;
+  }
+
+  // top spacing
+  .#{$name}-t {
+    padding-top: $value;
+  }
+
+  // bottom spacing
+  .#{$name}-b {
+    padding-bottom: $value;
+  }
+}

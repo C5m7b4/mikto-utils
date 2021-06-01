@@ -1,0 +1,38 @@
+$margin-map: (
+  'mg-1': $spacing,
+  'mg-2': $spacing-2,
+  'mg-3': $spacing-3,
+  'mg-half': $spacing-half,
+);
+
+@each $name, $value in $margin-map {
+  .#{$name} {
+    margin: $value;
+  }
+
+  .#{$name}-h {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .#{$name}-v {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .#{$name}-l {
+    margin-left: $value;
+  }
+
+  .#{$name}-r {
+    margin-right: $value;
+  }
+
+  .#{$name}-t {
+    margin-top: $value;
+  }
+
+  .#{$name}-b {
+    margin-bottom: $value;
+  }
+}
