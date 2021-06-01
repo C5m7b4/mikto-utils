@@ -66,6 +66,8 @@ export const Input = ({
     }
   }
 
+  // we need to try to resolve some conflicts
+
   if (attributes.size && isNotaNumber.text(attributes.size)) {
     warnOnce('Please use the prop "bsSize" instead of the size to bootstrap\'s input sizing.');
     bsSize = attributes.size;

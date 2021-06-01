@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 @import 'functions';
 @import 'variables';
 @import 'mixins';
 @import 'utilities';
+=======
+@import 'config';
+
+@import './partials/functions';
+
+@import './partials/variables';
+@import './partials/colors';
+@import './partials/helpers';
+>>>>>>> ca83a3460c3eff309c8e97435987f3885caa36c1
 
 // Layout and components
 @import 'root';
@@ -13,5 +23,15 @@
 // Helpers
 @import 'helpers';
 
+<<<<<<< HEAD
 // Utilities
 @import 'utilities/api';
+=======
+@import './partials/grid';
+@import './partials/alignment';
+
+@import './partials/typography';
+@import './partials/buttons';
+
+@import './partials/components';
+>>>>>>> ca83a3460c3eff309c8e97435987f3885caa36c1
