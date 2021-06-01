@@ -148,13 +148,3 @@ export const TransitionPropTypeKeys = [
   'onExiting',
   'onExited',
 ];
-
-let warned = {};
-export function warnOnce(message) {
-  if (!warned[message]) {
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    warned[message] = true;
-  }
-}
