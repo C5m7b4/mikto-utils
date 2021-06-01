@@ -1,13 +1,17 @@
-@import 'config';
-@import './partials/variables';
-@import './partials/colors';
-@import './partials/helpers';
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+@import 'utilities';
 
-@import './partials/spacing';
-@import './partials/margins';
+// Layout and components
+@import 'root';
+@import 'colors';
+@import 'grid';
+@import 'container';
+@import 'alert';
 
-@import './partials/mixins';
+// Helpers
+@import 'helpers';
 
-@import './partials/grid';
-
-@import './partials/components';
+// Utilities
+@import 'utilities/api';

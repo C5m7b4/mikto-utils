@@ -13,48 +13,66 @@ export default {
 
 const Template = args => {
   return (
-    <div className={`${args.color}-bg spacing mg-1`} {...args}>
-      {`This is the ${args.color} color from our theme.`}
+    <div>
+      <h3>Here are the Theme colors</h3>
+      <div className="primary" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Primary
+      </div>
+      <div className="secondary" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Secondary
+      </div>
+      <div className="success" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Success
+      </div>
+      <div className="info" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Info
+      </div>
+      <div className="warning" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Warning
+      </div>
+      <div className="danger" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Danger
+      </div>
+
+      <h3>Here are the rest of the colors</h3>
+      <div className="blue" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is blue
+      </div>
+      <div className="indigo" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Indigo
+      </div>
+      <div className="purple" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Purple
+      </div>
+      <div className="pink" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Pink
+      </div>
+      <div className="red" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Red
+      </div>
+      <div className="orange" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Orange
+      </div>
+      <div className="yellow" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Yellow
+      </div>
+      <div className="green" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Green
+      </div>
+      <div className="teal" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Teal
+      </div>
+      <div className="cyan" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Cyan
+      </div>
+      <div className="gray" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Gray
+      </div>
+      <div className="gray-dark" style={{ padding: '5px', color: '#fff', marginBottom: '10px' }}>
+        Here is Gray-Dark
+      </div>
     </div>
   );
 };
 
-export const MainColor = Template.bind({});
-MainColor.args = {
-  color: 'main-color',
-};
-
-export const SecondColor = Template.bind({});
-SecondColor.args = {
-  color: 'secondary-color',
-};
-
-export const SuccessColor = Template.bind({});
-SuccessColor.args = {
-  color: 'success-color',
-};
-
-export const WarningColor = Template.bind({});
-WarningColor.args = {
-  color: 'warning-color',
-};
-
-export const DangerColor = Template.bind({});
-DangerColor.args = {
-  color: 'danger-color',
-};
-
-export const InfoColor = Template.bind({});
-InfoColor.args = {
-  color: 'info-color',
-};
-
-export const LightColor = Template.bind({});
-LightColor.args = {
-  color: 'light-color',
-};
-
-export const DarkColor = Template.bind({});
-DarkColor.args = {
-  color: 'dark-color',
-};
+export const ColorScheme = Template.bind({});

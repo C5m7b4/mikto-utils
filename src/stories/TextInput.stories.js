@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextInput } from '../components/Form/TextInput';
 
-import '../styles.css';
+//import '../styles.css';
 
 export default {
   title: 'Forms/TextInput',
