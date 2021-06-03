@@ -11,25 +11,69 @@ export default {
 const Template = args => {
   return (
     <div className="container">
-      <div className="row justify-evenly">
-        <Button color="main">Main</Button>
-        <Button color="secondary" className="brand-light">
+      <div>
+        <button type="button" className="btn btn-primary">
+          Primary
+        </button>
+        <button type="button" className="btn btn-secondary">
           Secondary
-        </Button>
-        <Button color="success">Success</Button>
-        <Button color="warning">Warning</Button>
-        <Button color="danger" className="brand-light">
+        </button>
+        <button type="button" className="btn btn-info">
+          Info
+        </button>
+        <button type="button" className="btn btn-warning">
+          Warning
+        </button>
+        <button type="button" className="btn btn-danger">
           Danger
-        </Button>
-        <Button color="info">Info</Button>
+        </button>
+        <button type="button" className="btn btn-dark">
+          Dark
+        </button>
+        <button type="button" className="btn btn-light">
+          Light
+        </button>
       </div>
-      <div className="row justify-evenly mg-1-t">
-        <Button outline color="brand-1-bg">
-          Outline 1
-        </Button>
-        <Button outline color="brand-success-bg">
-          Outline 2
-        </Button>
+      <div className="mt-3">
+        <button type="button" className="btn btn-outline-primary">
+          Primary
+        </button>
+        <button type="button" className="btn btn-outline-secondary">
+          Secondary
+        </button>
+        <button type="button" className="btn btn-outline-info">
+          Info
+        </button>
+        <button type="button" className="btn btn-outline-warning">
+          Warning
+        </button>
+        <button type="button" className="btn btn-outline-danger">
+          Danger
+        </button>
+        <button type="button" className="btn btn-outline-dark">
+          Dark
+        </button>
+        <button type="button" className="btn btn-outline-light">
+          Light
+        </button>
+      </div>
+      <div className="mt-3">
+        <button type="button" className="btn btn-primary btn-lg">
+          Large
+        </button>
+        <button type="button" className="btn btn-primary btn-sm">
+          Large
+        </button>
+      </div>
+      <div className="mt-3">
+        <button type="button" className="btn btn-primary btn-lg btn-block">
+          Block
+        </button>
+        <div className="mt-3">
+          <button type="button" className="btn btn-primary btn-lg disabled">
+            Block
+          </button>
+        </div>
       </div>
     </div>
   );
